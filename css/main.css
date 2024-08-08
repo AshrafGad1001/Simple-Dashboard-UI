@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/*-----------------------------------------*/
+/*-------------Navbar Style----------------*/
+/*-----------------------------------------*/
+
+.container .nav-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-top: 20px;
+}
+
+.container a,
+.container i {
+    cursor: pointer;
+}
+
+.container .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-inline-start: 20px;
+}
+
+.container .logo i {
+    font-size: 22px;
+}
+
+.container .logo img {
+    height: 40px;
+}
+
+
+
+/*--------------------------------------*/
+.container .search {
+    text-align: center;
+    align-items: center;
+}
+
+.container .search form {
+    width: 350px;
+    position: relative;
+}
+
+.container .search form input {
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f0ebfc;
+    border: 1px solid transparent;
+    outline: 0;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    padding: 6px 6px 6px 50px;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+.container .search form input:focus {
+    box-shadow: 1px 1px 10px #285d92;
+    border-color: #285d92;
+}
+
+.container .search form span {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+}
+
+.container .search form span i {
+    color: rgb(110, 109, 108);
+}
+
+/*--------------------------------------*/
+.container .user .inner {
+    padding-inline-end: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .user .notification a {
+    position: relative;
+}
+
+.container .user .notification a i {
+    font-size: 25px;
+    color: rgb(147, 147, 147);
+}
+
+.container .user .notification a span {
+    font-size: 10px;
+    background-color: #f50057;
+    padding: 3px;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    position: absolute;
+    top: -10px;
+    right: -8px;
+}
+
+.container .user .user-area figure {
+    overflow: hidden;
+}
+
+.container .user .user-area a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgb(28, 28, 28);
+    font-size: 16px;
+}
+
+.container .user .user-area a i {
+    font-style: 10px;
+
+}
+
+.container .user .user-area img {
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.container .user .user-area {
+    position: relative;
+}
+
+.container .user .user-area .drop-down-lst {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+}
