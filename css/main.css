@@ -13,7 +13,19 @@ body {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #285d9212;
+    box-shadow: 0px 5px 10px rgb(0 0 0 /15%);
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #FFFFFF;
 }
+
 
 .container a,
 .container i {
@@ -151,6 +163,181 @@ body {
 
 .container .user .user-area .drop-down-lst {
     list-style: none;
-    padding: 0;
+    padding: 12px;
+    min-width: 200px;
+    border-radius: 5px;
     position: absolute;
+    left: -50px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px rgb(0 0 0 /19%);
+    transform: translateY(22px);
+    -webkit-transform: translateY(22px);
+    -moz-transform: translateY(22px);
+    -ms-transform: translateY(22px);
+    -o-transform: translateY(22px);
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.container .user .user-area .drop-down-lst li i {
+    margin-inline-end: 12px;
+}
+
+.container .user .user-area .drop-down-lst li a {
+    display: block;
+    padding: 8px 15px;
+    transition: 100ms;
+    -webkit-transition: 100ms;
+    -moz-transition: 100ms;
+    -ms-transition: 100ms;
+    -o-transition: 100ms;
+}
+
+.container .user .user-area .drop-down-lst li a:hover {
+    background-color: #cfcfcf;
+    color: black;
+}
+
+
+
+/*-----------------------------------------*/
+/*-------------side-bar Style----------------*/
+/*-----------------------------------------*/
+.content-dashboard {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 70.75px;
+}
+
+.side-bar {
+    background-color: #e0e0e0aa;
+    min-height: calc(100vh - 70.75px);
+    overflow-y: auto;
+}
+
+.side-bar .user-info {
+    text-align: center;
+    margin-block: 40px;
+}
+
+.side-bar .user-info h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3a3a3a;
+    letter-spacing: 1.1px;
+}
+
+.side-bar .user-info small {
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    color: #3a3a3a;
+    opacity: 0.7;
+}
+
+.side-bar .user-info .user-img img {
+    height: 70px;
+    border: 1px solid #285d92;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+
+.side-bar .user-info .user-img {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.side-bar .user-info .user-img span {
+    position: absolute;
+    font-size: 14px;
+    background-color: #f50057;
+    padding: 3px;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: -1px;
+    right: 87px;
+}
+
+.side-bar .user-info .data-user {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+.side-bar .user-info .data-user figure {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.side-bar .user-info .data-user figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    object-position: center;
+
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.side-bar .menus>ul>li {
+    margin-bottom: 50px;
+
+}
+
+.side-bar .menus ul li a {
+    display: flex;
+    align-items: center;
+
+}
+
+.side-bar .menus ul li a i {
+    margin-inline: 12px;
+}
+
+.side-bar .menus>ul {
+    position: relative;
+}
+
+.side-bar .menus .num-span {
+    background-color: #1ce2b0;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-style: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+
+
+    position: absolute;
+    right: 0;
 }
